@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+body{
+  font-family: 'Questrial', sans-serif;
+}
+
+#names{
+  position: absolute;
+  line-height: 80px;
+  top:0; left:3%;
+}
+
+h1{
+  font-size: 170px;
+  letter-spacing: 15px;
+  color: white;
+}
+
+.color{
+  width: 15px;
+  height: 800px;
+  background-color: #cc5500;
+  animation: spilldown 2000ms linear;
+  background-position: left top;
+  -webkit-transition: width 800ms;
+  position:absolute;
+  top:0; right:28%;
+}
+
+
+@keyframes spilldown{
+  0%{
+    height: 15px;
+  }
+  35%, 50%{
+    height: 100px;
+  }
+  75%, 80%{
+    height: 350px;
+  }
+  100%{
+    height: 500px;
+  }
+}
+
+
+.color:hover{
+    width:80vw;
+}
