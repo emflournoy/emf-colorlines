@@ -4,46 +4,96 @@ body{
   font-family: 'Questrial', sans-serif;
 }
 
-#names{
+.names{
   position: absolute;
-  line-height: 80px;
   top:0; left:3%;
 }
 
 h1{
-  font-size: 170px;
+  font-size: 150px;
   letter-spacing: 15px;
+}
+
+#white{
   color: white;
+}
+
+#orange{
+  color: #cc5500;
+}
+
+.hide{
+  display: none;
 }
 
 .color{
   width: 15px;
-  height: 800px;
+  height: 100vh;
   background-color: #cc5500;
-  animation: spilldown 2000ms linear;
   background-position: left top;
-  -webkit-transition: width 800ms;
+  /*-webkit-transition: width 800ms;*/
   position:absolute;
   top:0; right:28%;
 }
 
+.drip{
+  animation: spilldown 2000ms linear;
+}
 
 @keyframes spilldown{
   0%{
     height: 15px;
   }
-  35%, 50%{
-    height: 100px;
-  }
-  75%, 80%{
-    height: 350px;
-  }
   100%{
-    height: 500px;
+    height: 100vh;
   }
 }
 
+.swipeleft{
+  width: 80vw;
+  animation: swipeleft 2000ms linear;
+}
 
-.color:hover{
-    width:80vw;
+@keyframes swipeleft{
+  0%{
+    width: 15px;
+  }
+  100%{
+    width: 80vw;
+  }
+}
+
+.swipedown{
+  background-image: linear-gradient(
+      to bottom,
+      white,
+      white 50%,
+      #cc5500 50%);
+      background-size: 100% 200%;
+      background-position-x: 100%;
+  width: 100vw;
+  animation: swipedown 6000ms linear;
+}
+
+.textbackground h1{
+  background-image: linear-gradient(
+    	to bottom,
+	    #cc5500,
+	    #cc5500 50%,
+	    white 50%);
+	    background-size: 100% 200%;
+	    background-position-x: 100%;
+      background-position-y: 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: swipedown 2000ms linear 400ms forwards;
+}
+
+@keyframes swipedown{
+  0%{
+    background-position-y: 100%;
+  }
+  100%{
+    background-position-y: 0%;
+  }
 }
