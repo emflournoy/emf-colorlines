@@ -1,13 +1,7 @@
-$(document).ready(function() {
-
-  $('.color').on('animationend', function(){
-    $('.color').removeClass('.drip');
-    $('.color').addClass('swipeleft');
-    $('.swipeleft').on('animationend', function(){
-      $('.names').addClass('textbackground');
-      $('.color').addClass('swipedown');
-    });
+$('.drip').on('animationend', ()=>{
+  $('.name').css('background', '#cc5500');
+  $('.drip2').addClass('drip2go');
+  $('.drip2').on('animationend', ()=>{
+    $('.drip2').addClass('slideup');
   });
-
-
 });

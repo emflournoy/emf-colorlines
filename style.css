@@ -1,99 +1,119 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
-body{
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: 'Questrial', sans-serif;
+  font-size: 20px;
 }
 
-.names{
-  position: absolute;
-  top:0; left:3%;
-}
-
-h1{
-  font-size: 150px;
-  letter-spacing: 15px;
-}
-
-#white{
+.name{
   color: white;
-}
-
-#orange{
-  color: #cc5500;
-}
-
-.hide{
-  display: none;
-}
-
-.color{
-  width: 15px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 80vw;
   height: 100vh;
-  background-color: #cc5500;
-  background-position: left top;
-  /*-webkit-transition: width 800ms;*/
-  position:absolute;
-  top:0; right:28%;
+  font-size: 8em;
+  background: transparent;
+}
+
+.name::before{
+  content: "elizabeth \A flournoy";
+  white-space: pre-wrap;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.name::after{
+  content: "elizabeth \A flournoy";
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  color: #cc5500;
+  z-index: 5;
+  transition: height 4s linear;
+  background-color: white;
+  white-space: pre-wrap;
+  overflow: hidden;
+  animation: slidedown 2.5s linear 2000ms forwards;
+}
+
+@keyframes slidedown{
+  0%{
+    height: 0%;
+  }
+  100%{
+    height: 100%;
+  }
 }
 
 .drip{
-  animation: spilldown 2000ms linear;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  right: 20vw;
+  background: #cc5500;
+  animation: dripdown 2400ms linear forwards;
 }
 
-@keyframes spilldown{
+@keyframes dripdown {
   0%{
-    height: 15px;
+    height: 0;
+    width: 15px
   }
-  100%{
+  50%{
     height: 100vh;
-  }
-}
-
-.swipeleft{
-  width: 80vw;
-  animation: swipeleft 2000ms linear;
-}
-
-@keyframes swipeleft{
-  0%{
     width: 15px;
   }
   100%{
+    height: 100vh;
     width: 80vw;
   }
 }
 
-.swipedown{
-  background-image: linear-gradient(
-      to bottom,
-      white,
-      white 50%,
-      #cc5500 50%);
-      background-size: 100% 200%;
-      background-position-x: 100%;
-  width: 100vw;
-  animation: swipedown 6000ms linear;
+.drip2go{
+  position: absolute;
+  top: 70vh;
+  height: 25px;
+  right: 0vw;
+  border-top: 30px solid #cc5500;
+  background: white;
+  z-index: 2;
+  animation: dripleft 1.3s linear 1500ms forwards;
 }
 
-.textbackground h1{
-  background-image: linear-gradient(
-    	to bottom,
-	    #cc5500,
-	    #cc5500 50%,
-	    white 50%);
-	    background-size: 100% 200%;
-	    background-position-x: 100%;
-      background-position-y: 100%;
-  color: transparent;
-  -webkit-background-clip: text;
-  animation: swipedown 2000ms linear 400ms forwards;
-}
-
-@keyframes swipedown{
+@keyframes dripleft {
   0%{
-    background-position-y: 100%;
+    width: 0;
+  }
+  50%{
+    width: 50vw;
   }
   100%{
-    background-position-y: 0%;
+    width: 100vw;
+  }
+}
+
+.slideup{
+  width: 100vw;
+  animation: slideup 1.5s linear forwards;
+}
+
+@keyframes slideup {
+  0%{
+    top: 70vh;
+    height: 30px;
+  }
+  100%{
+    top: 0vh;
+    height: 100vh;
+    border-top: 100vh solid #cc5500;
   }
 }
