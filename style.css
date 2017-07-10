@@ -83,12 +83,11 @@ html, body{
 .drip2go{
   position: absolute;
   top: 70vh;
-  height: 25px;
   right: 0vw;
   border-top: 30px solid #cc5500;
   background: white;
   z-index: 2;
-  animation: dripleft 1.3s linear 1500ms forwards;
+  animation: dripleft 1.3s linear 1200ms forwards;
 }
 
 @keyframes dripleft {
@@ -118,4 +117,10 @@ html, body{
     height: 100vh;
     border-top: 100vh solid #cc5500;
   }
+}
+
+.backgroundOrange{
+  background-color: #cc5500;
+  height: 100vh;
+  width: 100vh;
 }
