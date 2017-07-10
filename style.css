@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Barrio');
 
 html, body{
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Barrio', cursive;
+
   font-size: 20px;
 }
 
