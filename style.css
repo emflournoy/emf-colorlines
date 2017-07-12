@@ -6,9 +6,49 @@ html, body{
   padding: 0;
   height: 100%;
   font-family: 'Barrio', cursive;
-
   font-size: 20px;
 }
+
+h2{
+  font-size: 70px;
+}
+
+h4{
+  font-size: 35px;
+}
+
+p{
+  font-family: 'Questrial', cursive;
+  font-size: 18px;
+}
+
+.icon{
+  font-size: 80px;
+  opacity: .5;
+}
+
+#about, #services, #background{
+  padding: 170px;
+}
+
+#services h2{
+  padding-bottom: 30px;
+}
+
+#background p, #background h2 {
+  color: white;
+}
+
+.hidden{
+  display: none;
+}
+
+#canvas{
+  z-index: 6;
+}
+
+
+/* ANIMATIONS ========================================== */
 
 .name{
   color: white;
@@ -123,4 +163,37 @@ html, body{
   background-color: #cc5500;
   height: 100vh;
   width: 100vh;
+}
+
+/*TRIANGLES ===============================*/
+@import "compass/css3";
+
+canvas{
+  display:block;
+  //clip-path: url(#clipping);
+}
+
+/* COLOR ==================================*/
+#canvas {
+  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 50s; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+  0%   {background: #cc5500;}
+  25%  {background: #DE925C;}
+  50%  {background: #BA4E00;}
+  75%  {background: #5D2700;}
+  100% {background: #cc5500;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #cc5500;}
+  25%  {background: #DE925C;}
+  50%  {background: #BA4E00;}
+  75%  {background: #5D2700;}
+  100% {background: #cc5500;}
 }
