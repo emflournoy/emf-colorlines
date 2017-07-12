@@ -27,7 +27,14 @@ p{
   opacity: .5;
 }
 
-#about, #services, #background{
+.projImg{
+  height: 180px;
+  width: 330px;
+  border-radius: 25px;
+  border: solid 5px #333
+}
+
+#about, #services, #background, #Projects{
   padding: 170px;
 }
 
