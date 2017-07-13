@@ -214,7 +214,7 @@ p{
 	right: 0%;
 	width: 170%;
 	height: 200%;
-  /*overflow:hidden;*/
+  overflow:hidden;
 }
 .stripes > div {
 	height: 100%;
