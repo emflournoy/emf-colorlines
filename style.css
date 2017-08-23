@@ -16,6 +16,10 @@ h2{
   font-size: 70px;
 }
 
+h3{
+  font-size: 45px;
+}
+
 h4{
   font-size: 35px;
 }
@@ -43,6 +47,7 @@ p{
 
 #about{
   z-index: 12;
+  width: 100%;
 }
 
 #services h2{
@@ -75,6 +80,17 @@ p{
   color: white;
 }
 
+#contact{
+  padding-top: 10%;
+  background-color: #333;
+  color: white;
+  height: 70%;
+  width: 100%;
+}
+
+i, a{
+  color:#de925c;
+}
 
 
 .backgroundOrange{

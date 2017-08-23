@@ -8,14 +8,12 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <script type="text/javascript" src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     </script>
-    <script src="main.js" charset="utf-8" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -37,18 +35,16 @@
 
     <!-- about-->
     <div id="about" class="text">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="heading">About me</h2>
-            <hr>
-            <!-- <p class="lead">Whaddaya want to know.</p> -->
-            <p>I'm all about combining components in just the right way to create the perfect outcome. Websites, photographs, design, branding, language, feeling, aesthetic - it all comes togeter to really portray things in a profound and meaningful way. A website is more than something you look at. A photograph is more than just an image. Let's talk about how we can take your project beyond the eye.</p>
-            <p>I'm a Boulder-based jack of all trades with a specific emphasis in Web Development backed up by experience in photography, graphic design, branding, marketing, business & event management, and so much more. I am currently enrolled in the Galvanize Boulder Full Stack program in addition to working outside of school as the Project Director for RiseUP The Movie.</p>
-          </div>
-          <div class="col-md-5 col-md-offset-1">
-            <p><img src="images/sail.jpg" alt="" class="img-responsive img-circle"></p>
-          </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="heading">About me</h2>
+          <hr>
+          <!-- <p class="lead">Whaddaya want to know.</p> -->
+          <p>I'm all about combining components in just the right way to create the perfect outcome. Websites, photographs, design, branding, language, feeling, aesthetic - it all comes togeter to really portray things in a profound and meaningful way. A website is more than something you look at. A photograph is more than just an image. Let's talk about how we can take your project beyond the eye.</p>
+          <p>I'm a Boulder-based jack of all trades with a specific emphasis in Web Development backed up by experience in photography, graphic design, branding, marketing, business & event management, and so much more. I am currently enrolled in the Galvanize Boulder Full Stack program in addition to working outside of school as the Project Director for RiseUP The Movie.</p>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <p><img src="images/sail.jpg" alt="" class="img-responsive img-circle"></p>
         </div>
       </div>
     </div>
@@ -58,7 +54,7 @@
     <div id="Projects" style="background-color: #DE925C">
       <!-- <div class="container"> -->
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -83,7 +79,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div> -->
 
         <div class="row services">
           <div class="col-md-12">
@@ -154,9 +150,8 @@
     </div>
     <!-- Services end-->
 
-    <!-- text page-->
+    <!-- background-->
     <div id="background" style="background-color: #333;" class="text-page section-inverse">
-      <!-- <div class="container"> -->
         <div class="row">
           <div class="col-md-12">
             <h2 class="heading">Background</h2>
@@ -173,12 +168,28 @@
             </div>
           </div>
         </div>
-      <!-- </div> -->
     </div>
-    <!-- text page end-->
+    <!-- background end-->
+
+    <!-- contact-->
+    <div id="contact" class="text-page section-inverse">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h3 class="section-heading">Did we just become best friends?</h3>
+            <hr class="primary">
+            <p>Want to create something awesome?<br>Shoot me an email and let's get started!</p>
+          </div>
+          <div class="col-sm-4 col-sm-offset-4 text-center">
+            <a href="mailto:bflournoy@gmail.com"><i class="fa fa-envelope-o fa-3x sr-contact"></i><p>Email me!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact end-->
 
 
-
+  <script type="text/javascript" src="main.js"></script>
 
 
 </body>
